@@ -2,6 +2,12 @@ let isWorkSelected = false;
 let isSchoolSelected = false;
 let isAppointmentSelected = false;
 let isOtherSelected = false;
+let scheduleItems = [];
+let workItem = {title:"null", hour:0, minute:0};
+let schoolItem = {title:"null", hour:0, minute:0};
+let appointmentItem = {title:"null", hour:0, minute:0};
+let otherItem = {title:"null", hour:0, minute:0};
+
 
 $(function(){
 
@@ -54,6 +60,11 @@ $(function(){
             isOtherSelected = true;
             $('#otherSelectCard').addClass('shadow');
             $('#otherSelectCard').addClass('bg-light');
+        }
+      });
+
+      $("#step1continueButton").on("click", function(){
+        if(isWorkSelected = true) {
         }
       });
 
