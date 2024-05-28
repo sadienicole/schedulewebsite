@@ -52,10 +52,10 @@ $success: #7952b3;
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
 // @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/jumbotron";
@@ -87,4 +87,22 @@ body {
 // Style Bootstrap icons
 .bi {
   fill: currentcolor;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #f9ebfc;
+  color: black;
+}
+
+.nav-pills .nav-link {
+  color: #b126d1;
+}
+
+.breadcrumb {
+  background-color: #f9ebfc;
+  color:black;
+}
+
+.breadcrumb a {
+  color:#b126d1;
 }
